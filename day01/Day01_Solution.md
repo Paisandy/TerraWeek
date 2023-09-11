@@ -132,6 +132,15 @@ Click on the Security Credential
 ![image](https://github.com/Paisandy/TerraWeek/assets/115485972/a69595a7-d772-4227-97af-913241531112)
 ![image](https://github.com/Paisandy/TerraWeek/assets/115485972/bf547b41-2c24-4c9f-a255-8f5acfbd0530)
 ![image](https://github.com/Paisandy/TerraWeek/assets/115485972/a7666c4c-b154-4290-b462-8c6d690e5e29)
+![image](https://github.com/Paisandy/TerraWeek/assets/115485972/3e8d9302-877e-41be-bbdc-f65a32b57398)
+
+**Go to the Visual Studio Terminal**
+Copy this command
+```
+aws configure
+```
+**Give your AWS Access Key ID, AWS Secret Acess Key, Default Region Name, Default output format**
+![image](https://github.com/Paisandy/TerraWeek/assets/115485972/4f87169a-ad2c-45f4-bef4-eac5dbff4b3b)
 
 
 
