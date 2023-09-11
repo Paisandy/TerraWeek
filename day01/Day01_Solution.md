@@ -142,7 +142,89 @@ aws configure
 **Give your AWS Access Key ID, AWS Secret Acess Key, Default Region Name, Default output format**
 ![image](https://github.com/Paisandy/TerraWeek/assets/115485972/4f87169a-ad2c-45f4-bef4-eac5dbff4b3b)
 
+Create a Folder and Start aws terraform coding
 
+### Terraform Plugin for AWS CLI
+copy the code
+```
+terraform {
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 5.0"
+    }
+  }
+}
+```
+Terraform Plugins that allow it to coomunicate with various infrastructure and service providers. Terraform can handle the resource and data source specific to each. For example - you can use aws provider of aws to allow terraform to manage aws resources.
 
+### Let's start automate using terraform to creating a Ec2 Instance and S3 Bucket
+here is code
+```
+# Creating S3 Bucket
+provider "aws" {
+  region = "us-east-1"
+}
 
+resource "aws_s3_bucket" "demo-bucket" {
+  bucket = "my-bucket-oii"
 
+  tags = {
+    Name        = "My bucket"
+    Environment = "Dev"
+  }
+}
+
+# Creating Ec2 Instance
+resource "aws_instance" "my-instance" {
+  ami           = "ami-053b0d53c279acc90"
+  instance_type = "t2.micro"
+  tags = {
+    "Name" = "MyInstanceEc2"
+  }
+}
+```
+**Should Provide a Region base on your choice**
+![image](https://github.com/Paisandy/TerraWeek/assets/115485972/260c6e88-0916-4551-b226-f412e05994cc)
+![image](https://github.com/Paisandy/TerraWeek/assets/115485972/71552da0-1d9b-424f-893c-d49b8a959028)
+
+After writing the code
+apply this command
+```
+terraform init
+```
+![image](https://github.com/Paisandy/TerraWeek/assets/115485972/3179fe9b-8599-43ad-849f-d7a0cb778dce)
+
+next apply command **terraform fmt**
+The terraform fmt command is used to rewrite Terraform configuration files to a canonical format and style.
+```
+terraform fmt
+```
+
+next apply command **terraform validate**
+The terraform validate command is used to validate the syntax of Terraform files. Terraform performs a syntax check on all Terraform files in the directory specified and displays warnings and errors if any files contain invalid syntax.
+```
+terraform validate
+```
+![image](https://github.com/Paisandy/TerraWeek/assets/115485972/7c69806b-35be-4263-ad91-77f1c5fd8a64)
+
+next apply coomand **terraform plan**
+```
+terraform plan
+```
+
+nexy apply command **terraform apply**
+```
+terraform apply
+```
+![image](https://github.com/Paisandy/TerraWeek/assets/115485972/df57801c-b4d8-4a19-9837-af361b8183dd)
+![image](https://github.com/Paisandy/TerraWeek/assets/115485972/1fd15b80-ff6a-46d9-ba3c-74b75bff3a4e)
+
+### Finally done!! Let's see 
+**S3 Bucket**
+![image](https://github.com/Paisandy/TerraWeek/assets/115485972/5b115340-7751-4506-b431-c7b96236e054)
+**Ec2 Instance**
+![image](https://github.com/Paisandy/TerraWeek/assets/115485972/1ba48a9f-d125-4443-8711-ec40898b69e3)
+
+## Conclusion
+You did it! You learned how to use Terraform, See the magic how automation work. Practice it more. Do hands on experience. Will see next blog.
