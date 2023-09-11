@@ -108,13 +108,32 @@ The actual execution and automation happen in this command.
 
 ## Connect to AWS Cloud
 You must have an AWS Account to proceed with the below steps:
-1. Create IAM User
+### 1. Create IAM User
 ![image](https://github.com/Paisandy/TerraWeek/assets/115485972/757f11e9-30c0-4d28-b1dd-0ac4aa41649c)
 ![image](https://github.com/Paisandy/TerraWeek/assets/115485972/8504cf99-bc49-4d71-92b0-4028aef3daf3)
 ![image](https://github.com/Paisandy/TerraWeek/assets/115485972/1dbc8e46-abf4-482b-8a68-0832c6d2b8f1)
 ![image](https://github.com/Paisandy/TerraWeek/assets/115485972/3a9279fe-9d7f-4a4b-988b-71062e2cefbe)
 ![image](https://github.com/Paisandy/TerraWeek/assets/115485972/afce6c62-3861-4123-a881-b439c92a2788)
 ![image](https://github.com/Paisandy/TerraWeek/assets/115485972/320d1ec3-155b-4541-814c-9215e3010b4a)
+
+**Scroll Down Click on NEXT**
+**Click on Add New Tag**
+![image](https://github.com/Paisandy/TerraWeek/assets/115485972/ed9b7ad9-b65b-4fb7-9631-7cf502730f43)
+![image](https://github.com/Paisandy/TerraWeek/assets/115485972/6637b0c6-bbc8-4817-8984-b97619aa1977)
+Download .csv file and Click on Return to users 
+Finally! User is Created.
+
+### 2. Login to aws cli
+**First you need to create a Security Credential. to login aws cli**
+![image](https://github.com/Paisandy/TerraWeek/assets/115485972/6007e9d8-611d-4f5c-8021-200496b9f88d)
+Click on the Security Credential
+![image](https://github.com/Paisandy/TerraWeek/assets/115485972/78a8f0ac-177a-4d5e-9698-d1661d3b72d3)
+![image](https://github.com/Paisandy/TerraWeek/assets/115485972/e0e85a58-a495-48bf-94a6-995aed87e255)
+![image](https://github.com/Paisandy/TerraWeek/assets/115485972/a69595a7-d772-4227-97af-913241531112)
+![image](https://github.com/Paisandy/TerraWeek/assets/115485972/bf547b41-2c24-4c9f-a255-8f5acfbd0530)
+![image](https://github.com/Paisandy/TerraWeek/assets/115485972/a7666c4c-b154-4290-b462-8c6d690e5e29)
+
+
 
 
 
