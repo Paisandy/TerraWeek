@@ -1,10 +1,6 @@
 # 7 Days Terraweek Challenge: Day 1 - Getting Started with Terraform
 Greetings Terraform enthusiastic, I have accepted Terraweek Challenge, So let's begin
 ## Day1: Introduction to Terraform and Terraform Basics
-1. What is Terraform and how can it help you manage infrastructure as code?
-2. Why do we need Terraform and how does it simplify infrastructure provisioning?
-3. How can you install Terraform and set up the environment for AWS, Azure, or GCP?
-4. Explain the important terminologies of Terraform with the example at least (5 crucial terminologies).
 
 Before diving into Terraform, it's essential to grasp the concept of **Infrastructure as Code (IaC)**. So, let's rephrase your sentences and provide a brief explanation:
 "Let's begin by understanding Infrastructure as Code (IaC) before delving into Terraform."
@@ -30,5 +26,38 @@ The team writes infrastructure configurations in a required programming language
 The code files are sent to a code repository.
 An IaC tool runs the code and performs the required activities.
 ![image](https://github.com/Paisandy/TerraWeek/assets/115485972/9616fc1a-8487-41ab-a6d9-c59961457d61)
+
+## How can it help you manage Infrastructure as Code?
+Terraform is a tool that assists in managing infrastructure as code. It enables you to define and provision infrastructure resources through code, simplifying the management and automation of your infrastructure.
+
+## Why do we need Terraform and how does it simplify infrastructure provisioning?
+Terraform works as an Infrastructure as Code (IaC) tool by allowing users to define infrastructure as code using the HashiCorp Configuration Language (HCL). Following are the steps involved in working with Terraform as an IaC tool:
+
+Configuration:
+Define the desired infrastructure in Terraform configuration files using the HashiCorp Configuration Language (HCL).
+Initialization:
+Initialize the working directory and download the necessary provider plugins and modules.
+Planning:
+Create an execution plan that shows what Terraform will do when you apply the configuration. This step analyzes the current infrastructure state and determines which resources must be created, updated, or destroyed to reach the desired state.
+Applying:
+Apply the changes to the infrastructure by creating, updating, or destroying resources as per the execution plan.
+Provisioning:
+Terraform can automatically provision the software and configurations on the infrastructure once the resources are created.
+Change Management:
+Any changes to the infrastructure can be managed using the same configuration files and applied in the same way, providing a consistent and repeatable process.
+![image](https://github.com/Paisandy/TerraWeek/assets/115485972/aab278ba-948b-477b-8ad9-a14f4cf7652f)
+
+## How can you install Terraform?
+The Best Practice for the Terraform using Visual Studion on to a Local Machine
+**Steps to Follow**
+1. Install Visual Studio Code (https://code.visualstudio.com/download)
+2. Install AWS CLI (https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) On Windows **Download and run the AWS CLI MSI installer for Windows (64-bit)**
+3. Install Terraform (https://developer.hashicorp.com/terraform/downloads) for Window **AMD64**
+4. Install Git Bash (https://developer.hashicorp.com/terraform/downloads)
+
+After Installing. Let's setup it.
+**Click on Windows Button --> Search "Edit The Environment Variables" --> Click on the "Environment Variables"**
+![image](https://github.com/Paisandy/TerraWeek/assets/115485972/7e9b0013-8416-436d-bafc-f8aa8c9cc0f9)
+
 
 
