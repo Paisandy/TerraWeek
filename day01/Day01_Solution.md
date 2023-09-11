@@ -17,5 +17,18 @@ There are Various IaC tools like Terraform, Chef, Puppet and Ansible.
 
 ## What Is Terraform?
 Terraform is a tool for provisioning, managing, and deploying infrastructure resources. It is an open-source tool written in Golang and created by the HashiCorp company. With Terraform, you can manage infrastructure for your applications across multiple cloud providers - AWS, Azure, GCP, etc. - using a single tool.
-https://www.datocms-assets.com/58478/1640019487-og-image.png
+![image](https://github.com/Paisandy/TerraWeek/assets/115485972/9a8228b4-49f5-4e8b-b668-bc844b17c8e8)
+To get started with Terraform, developers simply need to download the Terraform binary, choose which (https://developer.hashicorp.com/terraform/language/providers) they'll be working with, create some (https://developer.hashicorp.com/terraform/language/providers/configuration)
+
+## How Infrastructure as Code works?
+Without IaC, the team would individually configure the infrastructure (servers, databases, load balancers, containers, etc.) for each deployment. Over time, environments that were intended to be identical, become inconsistent (they are often called “snowflakes”), which makes them harder to configure and subsequently slows down deployments.
+So, IaC uses software tools to automate administrative tasks by describing infrastructure in code.
+
+It’s implemented like this:
+
+The team writes infrastructure configurations in a required programming language.
+The code files are sent to a code repository.
+An IaC tool runs the code and performs the required activities.
+![image](https://github.com/Paisandy/TerraWeek/assets/115485972/9616fc1a-8487-41ab-a6d9-c59961457d61)
+
 
