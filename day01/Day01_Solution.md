@@ -1,1 +1,11 @@
-### hi
+# 7 Days Terraweek Challenge: Day 1 - Getting Started with Terraform
+Greetings Terraform enthusiastic, I have accepted Terraweek Challenge, So let's begin
+## Day1: Introduction to Terraform and Terraform Basics
+1. What is Terraform and how can it help you manage infrastructure as code?
+2. Why do we need Terraform and how does it simplify infrastructure provisioning?
+3. How can you install Terraform and set up the environment for AWS, Azure, or GCP?
+4. Explain the important terminologies of Terraform with the example at least (5 crucial terminologies).
+
+Before diving into Terraform, it's essential to grasp the concept of *Infrastructure as Code (IaC)*. So, let's rephrase your sentences and provide a brief explanation:
+
+
