@@ -58,6 +58,52 @@ The Best Practice for the Terraform using Visual Studion on to a Local Machine
 After Installing. Let's setup it.
 **Click on Windows Button --> Search "Edit The Environment Variables" --> Click on the "Environment Variables"**
 ![image](https://github.com/Paisandy/TerraWeek/assets/115485972/7e9b0013-8416-436d-bafc-f8aa8c9cc0f9)
+**Click on the Path --> Click on the new --> Copy the Path which You Installed Terraform --> Click Ok**
+![image](https://github.com/Paisandy/TerraWeek/assets/115485972/c44dc94b-7df2-4b54-91e4-404207f25fb9)
+![image](https://github.com/Paisandy/TerraWeek/assets/115485972/7135773a-3804-4d28-ad09-1a577dbf6f4a)
+**Click ok**
+![image](https://github.com/Paisandy/TerraWeek/assets/115485972/d24d427c-41e3-46da-bc15-750bfbdc691a)
 
+Same Follow the steps AWS CLI, Git Bash.
+
+Open Visual Studio Code 
+5. Run the below code. It is Installed or not
+```
+terraform --version
+```
+![image](https://github.com/Paisandy/TerraWeek/assets/115485972/6c6faf81-ee9e-4091-aec7-46b3a916e679)
+```
+aws --version
+```
+![image](https://github.com/Paisandy/TerraWeek/assets/115485972/9f79c352-e76b-4b21-a5f4-f30d912bec4d)
+
+## Blocks and Arguments
+![image](https://github.com/Paisandy/TerraWeek/assets/115485972/eb79814d-e4e0-453e-a947-65220a278dd6)
+1. A block is a container for other content and An argument assigns a value to a particular name:
+2. filename = pai.txt"
+3. The identifier before the equals sign is the argument name, and the expression after the equals sign is the argument's value.
+4. Resource block: block name used to mention the type of the block. The resource block expects two labels, which are local_file and “pai” in the example above. A particular block type may have any number of required labels, or it may require none.
+5. Local = provider, file = type, “pai” name of the resource.
+6. Then we have arguments, filename, content, etc
+7. We can have multiple resources
+
+## Execution of Infrastructure
+**terraform init --> terraform plan --> terraform apply**
+### Terraform Init
+```
+terraform init
+```
+This command will scan your tf files in that folder and install all the required
+automation things.
+### Terraform Plan
+```
+terraform plan
+```
+This command will create an execution plan for terraforming, the things that will be installed, the names, and the properties added.
+### Terraform Apply
+```
+terraform apply
+```
+The actual execution and automation happen in this command.
 
 
