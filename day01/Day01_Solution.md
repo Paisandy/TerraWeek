@@ -106,4 +106,15 @@ terraform apply
 ```
 The actual execution and automation happen in this command.
 
+## Connect to AWS Cloud
+You must have an AWS Account to proceed with the below steps:
+1. Create IAM User
+![image](https://github.com/Paisandy/TerraWeek/assets/115485972/757f11e9-30c0-4d28-b1dd-0ac4aa41649c)
+![image](https://github.com/Paisandy/TerraWeek/assets/115485972/8504cf99-bc49-4d71-92b0-4028aef3daf3)
+![image](https://github.com/Paisandy/TerraWeek/assets/115485972/1dbc8e46-abf4-482b-8a68-0832c6d2b8f1)
+![image](https://github.com/Paisandy/TerraWeek/assets/115485972/3a9279fe-9d7f-4a4b-988b-71062e2cefbe)
+![image](https://github.com/Paisandy/TerraWeek/assets/115485972/afce6c62-3861-4123-a881-b439c92a2788)
+![image](https://github.com/Paisandy/TerraWeek/assets/115485972/320d1ec3-155b-4541-814c-9215e3010b4a)
+
+
 
