@@ -16,5 +16,6 @@ In Terraform, HCL (HashiCorp Configuration Language) is the language used to wri
 HCL is the language used in Terraform to define infrastucyure resouces and their configurations. It Provides a concise and readable syntax for describing the desired state of your infrastructure.
 
 **2. Blocks:** 
-In HCL, blocks are used to define different types of resources or configurations. Blocks start with a resource type or configuration type, followed by curly braces **"{}"**. Inside these blocks, you define the specific settings and attributes for that resource or configuration. For example:
+In HCL, blocks are used to define different types of resources or configurations. Blocks start with a resource type or configuration type, followed by curly braces **"{}"**. Inside these blocks, you define the specific settings and attributes for that resource or configuration. 
+For example:
 ![image](https://github.com/Paisandy/TerraWeek/assets/115485972/0664b115-434c-42e6-bc5c-cd892c64b8d6)
