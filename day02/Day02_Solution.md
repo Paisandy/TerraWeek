@@ -18,4 +18,12 @@ HCL is the language used in Terraform to define infrastucyure resouces and their
 **2. Blocks:** 
 In HCL, blocks are used to define different types of resources or configurations. Blocks start with a resource type or configuration type, followed by curly braces **"{}"**. Inside these blocks, you define the specific settings and attributes for that resource or configuration. 
 ![image](https://github.com/Paisandy/TerraWeek/assets/115485972/0664b115-434c-42e6-bc5c-cd892c64b8d6)
-For example  you can see post
+
+**3. Parameters and Arguments:**
+Within a block, you can specify parameters and arguments to configure the associated resource or configuration. Parameters are defined as attributes, and arguments are the values assigned to those attributes.
+1. Parameters: These are attributes defined in the resource or configuration block. For example, in the upper post resource block above **'filename'** and **'content'** are parameters.
+2. Arguments: These are the values assigned to the parameters. In this Upper post resource block **'pai.txt'** and **'I love Terraform'** re the arguments for the **'filename'** and **'content'** parameters, respectively.
+You use these parameters and arguments to customize the behavior and attributes of your infrastructure resources.
+
+Overall, Terraform uses HCL blocks, parameters, and arguments to define and configure resources in a clear and structured manner, making it easier to manage and provision infrastructure.
+
