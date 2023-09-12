@@ -82,6 +82,9 @@ In Terraform, variables, data types, and expressions are fundamental concepts th
 
 ![image](https://github.com/Paisandy/TerraWeek/assets/115485972/26185f5a-9a44-4709-9b55-7b2e42f3af93)
 
+![image](https://github.com/Paisandy/TerraWeek/assets/115485972/c8c32278-26c3-4b39-b357-288a255b14b5)
+
+
 **String:** Represents a sequence of characters enclosed in double quotes. Strings are used for various purposes in configuration files, such as naming resources or specifying values for resource attributes.
 
 ![image](https://github.com/Paisandy/TerraWeek/assets/115485972/ae9adbb3-7ec3-461e-b2b4-149893fc097c)
@@ -91,6 +94,8 @@ In Terraform, variables, data types, and expressions are fundamental concepts th
 ![image](https://github.com/Paisandy/TerraWeek/assets/115485972/9ad88798-3d8b-40b0-b9ad-58645949acc9)
 
 ![image](https://github.com/Paisandy/TerraWeek/assets/115485972/193109c0-53cb-4417-b1a0-c8517667a907)
+
+![image](https://github.com/Paisandy/TerraWeek/assets/115485972/69f2a05c-67c2-48bb-aa53-b65ee407dd13)
 
 **Boolean:** Represents a binary true/false value. Booleans are commonly used for enabling or disabling features or conditions in Terraform configurations.
 
@@ -104,3 +109,12 @@ hcl
 ![image](https://github.com/Paisandy/TerraWeek/assets/115485972/ae9adbb3-7ec3-461e-b2b4-149893fc097c)
 
 ![image](https://github.com/Paisandy/TerraWeek/assets/115485972/1343cc87-67fe-4acf-8f57-25d9f7a3f0a0)
+
+![image](https://github.com/Paisandy/TerraWeek/assets/115485972/cc2ea495-b896-4e74-a370-c32befa9bf3c)
+
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+![image](https://github.com/Paisandy/TerraWeek/assets/115485972/67b077c5-e2f8-49c7-ab9b-4519e6a7d1ec)
+
