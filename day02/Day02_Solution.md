@@ -3,4 +3,8 @@ Greetings Terraform enthusiastic, Hope you like my Day1 Blog. If you not read th
 Let's start Day2. Seat Back and follow my documentation.
 
 ## In this blog. we'll explore about
-### **.** 
+### **.** HCL blocks, Parameters, and arguments
+### **.** Different types of resources and data sources available in Terraform
+### **.** Variables, Data Types, and Expressions
+### **.** Writing Terraform configuration using HCL Syntax
+### **.** Testing and Debugging the configuration
