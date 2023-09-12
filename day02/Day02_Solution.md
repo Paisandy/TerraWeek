@@ -63,4 +63,14 @@ In Terraform, variables, data types, and expressions are fundamental concepts th
 
 ![image](https://github.com/Paisandy/TerraWeek/assets/115485972/f84af385-7263-4b01-ab22-eb9510cf4441)
 
+### 2. Data Types:
+**. Definition:** Terraform supports various data types to represent different kinds of values. Common data types include string, number, boolean, list, map, and object. Data types help you define the expected structure and constraints for your variables and resources.
 
+**Map:** Represents a collection of key-value pairs. Maps are used for defining configurations with more complex data structures, such as custom tags for AWS resources.
+![image](https://github.com/Paisandy/TerraWeek/assets/115485972/6f147f63-11e6-4b31-8b88-3a1a4d3e6b01)
+
+![image](https://github.com/Paisandy/TerraWeek/assets/115485972/3fc83cbe-43b9-48b9-b324-d1cc00c964cb)
+
+![image](https://github.com/Paisandy/TerraWeek/assets/115485972/acb001da-541d-43d5-8971-88c7e445094a)
+
+![image](https://github.com/Paisandy/TerraWeek/assets/115485972/f65f8d73-d635-4c65-bfe5-037a7482afef)
