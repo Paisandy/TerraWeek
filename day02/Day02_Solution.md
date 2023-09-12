@@ -67,6 +67,7 @@ In Terraform, variables, data types, and expressions are fundamental concepts th
 **. Definition:** Terraform supports various data types to represent different kinds of values. Common data types include string, number, boolean, list, map, and object. Data types help you define the expected structure and constraints for your variables and resources.
 
 **Map:** Represents a collection of key-value pairs. Maps are used for defining configurations with more complex data structures, such as custom tags for AWS resources.
+
 ![image](https://github.com/Paisandy/TerraWeek/assets/115485972/6f147f63-11e6-4b31-8b88-3a1a4d3e6b01)
 
 ![image](https://github.com/Paisandy/TerraWeek/assets/115485972/3fc83cbe-43b9-48b9-b324-d1cc00c964cb)
@@ -74,3 +75,32 @@ In Terraform, variables, data types, and expressions are fundamental concepts th
 ![image](https://github.com/Paisandy/TerraWeek/assets/115485972/acb001da-541d-43d5-8971-88c7e445094a)
 
 ![image](https://github.com/Paisandy/TerraWeek/assets/115485972/f65f8d73-d635-4c65-bfe5-037a7482afef)
+
+**List:** Represents an ordered collection of values. Lists are often used for defining multiple resource instances or specifying a list of values for a particular resource attribute.
+
+![image](https://github.com/Paisandy/TerraWeek/assets/115485972/043c044b-f192-4f0d-a53c-90b92dcc4f5b)
+
+![image](https://github.com/Paisandy/TerraWeek/assets/115485972/26185f5a-9a44-4709-9b55-7b2e42f3af93)
+
+**String:** Represents a sequence of characters enclosed in double quotes. Strings are used for various purposes in configuration files, such as naming resources or specifying values for resource attributes.
+
+![image](https://github.com/Paisandy/TerraWeek/assets/115485972/ae9adbb3-7ec3-461e-b2b4-149893fc097c)
+
+**Number:** Represents numeric values. Numbers are used for configuring attributes that require numerical values, such as instance counts or timeouts.
+
+![image](https://github.com/Paisandy/TerraWeek/assets/115485972/9ad88798-3d8b-40b0-b9ad-58645949acc9)
+
+![image](https://github.com/Paisandy/TerraWeek/assets/115485972/193109c0-53cb-4417-b1a0-c8517667a907)
+
+**Boolean:** Represents a binary true/false value. Booleans are commonly used for enabling or disabling features or conditions in Terraform configurations.
+
+**Object:** Represents a complex data structure that combines multiple attributes into a single entity. Objects are often used to define custom data types for resources.
+
+**Tuple:** Similar to a list, a tuple represents an ordered collection of values. However, unlike lists, tuples have a fixed size and can contain different data types.
+hcl
+
+**Set:** Represents an unordered collection of unique values. Sets are useful when you want to ensure that a collection of values contains no duplicates.
+
+![image](https://github.com/Paisandy/TerraWeek/assets/115485972/ae9adbb3-7ec3-461e-b2b4-149893fc097c)
+
+![image](https://github.com/Paisandy/TerraWeek/assets/115485972/1343cc87-67fe-4acf-8f57-25d9f7a3f0a0)
