@@ -22,8 +22,21 @@ In HCL, blocks are used to define different types of resources or configurations
 **3. Parameters and Arguments:**
 Within a block, you can specify parameters and arguments to configure the associated resource or configuration. Parameters are defined as attributes, and arguments are the values assigned to those attributes.
 1. Parameters: These are attributes defined in the resource or configuration block. For example, in the upper post resource block above **'filename'** and **'content'** are parameters.
-2. Arguments: These are the values assigned to the parameters. In this Upper post resource block **'pai.txt'** and **'I love Terraform'** re the arguments for the **'filename'** and **'content'** parameters, respectively.
+2. Arguments: These are the values assigned to the parameters. In this Upper post resource block **'pai.txt'** and **'I love Terraform'** are the arguments for the **'filename'** and **'content'** parameters, respectively.
 You use these parameters and arguments to customize the behavior and attributes of your infrastructure resources.
 
 Overall, Terraform uses HCL blocks, parameters, and arguments to define and configure resources in a clear and structured manner, making it easier to manage and provision infrastructure.
 
+## Different types of resources and data sources available in Terraform
+Terraform provides two primary types of objects for managing infrastructure: resources and data sources. Let's explore each type in more detail:
+
+**1. Resources:**
+Resources in Terraform represent infrastructure components that you want to create, update, or delete. These could be virtual machines, databases, networks, storage buckets, and more. Resources are defined using resource blocks in your Terraform configuration. 
+**Note: The post you are seeing. Used Variable function. That will see later to the next blog, STAY TUNE!!**
+![image](https://github.com/Paisandy/TerraWeek/assets/115485972/bc7f9853-06b0-478f-b19b-98cd0fe7d41b)
+![image](https://github.com/Paisandy/TerraWeek/assets/115485972/15a6b725-3adb-44ba-ab52-dd1481606a65)
+![image](https://github.com/Paisandy/TerraWeek/assets/115485972/e31b4283-f5e4-4464-8b49-8a1af8d992cd)
+In this example above pic, **"local_file"** is the resource type, and **"demo"** is thee resource name. You can then specify the resource's attributes and settings within the block.
+Terraform manages the lifecycle of resources, including their creation, modification, and deletion, based on your configuration.
+
+**2. Data Sources:**
