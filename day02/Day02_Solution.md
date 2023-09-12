@@ -33,8 +33,11 @@ Terraform provides two primary types of objects for managing infrastructure: res
 ### 1. Resources:
 Resources in Terraform represent infrastructure components that you want to create, update, or delete. These could be virtual machines, databases, networks, storage buckets, and more. Resources are defined using resource blocks in your Terraform configuration. 
 **Note: The post you are seeing. Used Variable function. That will see later**
+
 ![image](https://github.com/Paisandy/TerraWeek/assets/115485972/bc7f9853-06b0-478f-b19b-98cd0fe7d41b)
+
 ![image](https://github.com/Paisandy/TerraWeek/assets/115485972/15a6b725-3adb-44ba-ab52-dd1481606a65)
+
 ![image](https://github.com/Paisandy/TerraWeek/assets/115485972/e31b4283-f5e4-4464-8b49-8a1af8d992cd)
 In this example above pic, **"local_file"** is the resource type, and **"demo"** is thee resource name. You can then specify the resource's attributes and settings within the block.
 Terraform manages the lifecycle of resources, including their creation, modification, and deletion, based on your configuration.
@@ -54,6 +57,7 @@ In Terraform, variables, data types, and expressions are fundamental concepts th
 **. Definition:** Variables in Terraform allow you to parameterize your configurations by defining placeholders for values that can vary based on different use cases or environments. Variables are like input parameters for your Terraform configurations.
 **. Declaration:** You define variables in your Terraform configuration using a **"variable"** block. Here's an example of declaring a variable:
 ![image](https://github.com/Paisandy/TerraWeek/assets/115485972/b3a50b0d-19d3-422a-a7a1-3ff2291f6614)
+
 **. Usage:** You can use variables by referencing them in resource or data block configurations. For example, if you want to use the **"devops"** and **"DevOps"**  defined above, you can reference it like this:
 ![image](https://github.com/Paisandy/TerraWeek/assets/115485972/f84af385-7263-4b01-ab22-eb9510cf4441)
 
