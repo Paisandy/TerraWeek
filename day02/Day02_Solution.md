@@ -56,9 +56,11 @@ In Terraform, variables, data types, and expressions are fundamental concepts th
 ### 1. Variables:
 **. Definition:** Variables in Terraform allow you to parameterize your configurations by defining placeholders for values that can vary based on different use cases or environments. Variables are like input parameters for your Terraform configurations.
 **. Declaration:** You define variables in your Terraform configuration using a **"variable"** block. Here's an example of declaring a variable:
+
 ![image](https://github.com/Paisandy/TerraWeek/assets/115485972/b3a50b0d-19d3-422a-a7a1-3ff2291f6614)
 
 **. Usage:** You can use variables by referencing them in resource or data block configurations. For example, if you want to use the **"devops"** and **"DevOps"**  defined above, you can reference it like this:
+
 ![image](https://github.com/Paisandy/TerraWeek/assets/115485972/f84af385-7263-4b01-ab22-eb9510cf4441)
 
 
