@@ -112,9 +112,51 @@ hcl
 
 ![image](https://github.com/Paisandy/TerraWeek/assets/115485972/cc2ea495-b896-4e74-a370-c32befa9bf3c)
 
-
-
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-
 ![image](https://github.com/Paisandy/TerraWeek/assets/115485972/67b077c5-e2f8-49c7-ab9b-4519e6a7d1ec)
 
+### Expressions
+In Terraform, expressions are used to define dynamic values and perform calculations within your infrastructure code. Expressions allow you to reference and manipulate attributes of resources, variables, and other Terraform constructs. These expressions are written using HashiCorp Configuration Language (HCL), which is the language used in Terraform configuration files (.tf).
+
+Here are some common uses of expressions in Terraform:
+
+![image](https://github.com/Paisandy/TerraWeek/assets/115485972/043c044b-f192-4f0d-a53c-90b92dcc4f5b)
+
+![image](https://github.com/Paisandy/TerraWeek/assets/115485972/26185f5a-9a44-4709-9b55-7b2e42f3af93)
+
+## Writing Terraform configuration using HCL Syntax
+**Note: Please click on the link for the configuration using HCL Syntax**
+
+https://github.com/Paisandy/TerraWeek/blob/main/day01/Day01_Solution.md#terraform-plugin-for-aws-cli
+
+### Adding Required Providers
+**AWS Provider:**
+The **AWS Provider** is one of the most commonly used providers in Terraform. It allows you to provision and manage resources in AWS.
+
+![image](https://github.com/Paisandy/TerraWeek/assets/115485972/61621c3b-99a9-4afb-a790-078bcbfdc65f)
+
+![image](https://github.com/Paisandy/TerraWeek/assets/115485972/66868281-7a9c-46ec-b4fe-541a58d58cbc)
+
+Click on this link and follow the documentation https://registry.terraform.io/providers/hashicorp/aws/latest/docs
+
+**Creating Variables**
+Next, we can create variables using HCL syntax. Here you can see
+
+![image](https://github.com/Paisandy/TerraWeek/assets/115485972/73904292-2ea0-487f-9656-b2fcce0bb988)
+
+**Creating Resources**
+Next, we can create Resources using HCL syntax. Here you can see
+
+![image](https://github.com/Paisandy/TerraWeek/assets/115485972/82b1a95b-8d9f-4894-9bb8-50c63154b761)
+
+## Testing and Debugging
+Testing and debugging Terraform configurations is an important part of infrastructure as code (IaC) development. Here are some techniques and best practices for testing and debugging Terraform code:
+
+**terraform validate:** Run terraform validate to check your configuration files for syntax errors. This is a quick way to catch basic issues.
+
+**terraform fmt:** Use terraform fmt to format your code according to Terraform's style conventions. Consistent formatting makes it easier to read and maintain your code.
+
+**terraform plan:** Before applying changes, always run terraform plan to see the execution plan. It will show you what resources will be created, modified, or destroyed. Review this plan to ensure it aligns with your expectations.
+
+**terraform apply -auto-approve:** During development, you can use -auto-approve to apply changes without manual confirmation. Be cautious with this in production.
+
+**terraform destroy:** After testing, run terraform destroy to tear down the resources. Always clean up resources when they're no longer needed to avoid unnecessary costs.
