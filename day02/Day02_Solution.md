@@ -43,12 +43,17 @@ In this example above pic, **"local_file"** is the resource type, and **"demo"**
 Terraform manages the lifecycle of resources, including their creation, modification, and deletion, based on your configuration.
 
 ### 2. Data Sources:
+Data sources allow you to retrieve information from existing resources or external systems and use that data within your Terraform configuration. Data sources are read-only and provide a way to access information like IP addresses, AMI IDs, security group IDs, etc., from your infrastructure or cloud providers.
 
+Data sources are defined using data block declarations in your Terraform configuration. Here's an example of using a data source to retrieve information about an AWS VPC:
 
+![image](https://github.com/Paisandy/TerraWeek/assets/115485972/d3225eee-57c2-4458-ab94-2f40b19c9059)
 
+In this example, **"aws_vpc"** is the data source type, and **"example"** is the data source name. You can query attributes from the VPC that match your criteria, in this case, VPCs with the **"Name"** tag set to **"my-vpc."**
 
+Data sources are often used to gather information that is then passed as input to other resource configurations.
 
-
+These are the two main types of objects in Terraform: resources for managing infrastructure components and data sources for retrieving information from existing resources or external systems. Together, they allow you to define and manage your infrastructure as code efficiently.
 
 ## Variables, Data Types, and Expressions
 In Terraform, variables, data types, and expressions are fundamental concepts that allow you to define flexible and reusable infrastructure configurations. Let's explore each of these concepts:
@@ -160,3 +165,6 @@ Testing and debugging Terraform configurations is an important part of infrastru
 **terraform apply -auto-approve:** During development, you can use -auto-approve to apply changes without manual confirmation. Be cautious with this in production.
 
 **terraform destroy:** After testing, run terraform destroy to tear down the resources. Always clean up resources when they're no longer needed to avoid unnecessary costs.
+
+# Conclusion
+You did it! You learned how to use HCL Syntax, See the magic how automation work. Practice it more. Do hands on experience. Will see next blog.
