@@ -8,3 +8,21 @@ Greetings Terraform enthusiastic, Hope you like my Day2 Blog. If you not read th
 ### 3. Add a provisioner to the configuration file to configure the resource after it is created and use Terraform commands to apply for changes and destroy to remove resources.
 ### 4. Add lifecycle management configurations to the configuration file to control the creation, modification, and deletion of the resource and use Terraform commands to apply the changes.
 
+## Create a Terraform configuration file to define a resource of AWS EC2 instance.
+**Note: Follow my Day1 Blog here is the link https://github.com/Paisandy/TerraWeek/blob/main/day01/Day01_Solution.md and follow how to setup and install it here is the link https://github.com/Paisandy/TerraWeek/blob/main/day01/Day01_Solution.md#how-can-you-install-terraform**
+
+### Install AWS CLI https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
+### Follow this Instruction How to setup a AWS CLI https://github.com/Paisandy/TerraWeek/blob/main/day01/Day01_Solution.md#connect-to-aws-cloud
+
+**Now follow the steps:**
+**Step-1:** Create a file. In this post I have created a file **"aws_cli.tf"** to add aws cli 
+plugins
+
+![image](https://github.com/Paisandy/TerraWeek/assets/115485972/2f1bc6e3-e8ba-427e-8e4d-8d95c18f21d8)
+
+**Step-2:** Create a file **"variable.tf"** to add s3 bucket name, ec2 instance ami, ec2 instance type.
+
+![image](https://github.com/Paisandy/TerraWeek/assets/115485972/586de619-02f1-4e0e-85f2-479fff260f6a)
+
+**Step-3:** Create a **ssh-keygen** before the configuration of vpc, security groups add on.
+**Step-4:**
