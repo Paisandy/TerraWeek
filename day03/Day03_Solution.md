@@ -25,4 +25,81 @@ plugins
 ![image](https://github.com/Paisandy/TerraWeek/assets/115485972/586de619-02f1-4e0e-85f2-479fff260f6a)
 
 **Step-3:** Create a **ssh-keygen** before the configuration of vpc, security groups add on.
-**Step-4:**
+
+**Step-4:**   Create a file **"main.tf"** add s3 bucket, configure keypair, vpc and security groups.
+
+1. Give the Provider aws and the region name
+```
+provider "aws" {
+  region = "us-east-1"
+}
+```
+
+2. Creat a AWS S3 Bucket
+```
+# creating a aws s3 bucket
+resource "aws_s3_bucket" "bucket_demo" {
+  bucket = var.aws_bucket
+  tags = {
+    "Name"        = "Day_teen"
+    "Environment" = "Dev"
+  }
+}
+```
+**FOLLOW THE TERRAFORM DOCUMENTATION FOR S3 BUCKET https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket**
+for bucket. I have used variable. You can see the **"variable.tf** that I have menttioned s3 bucket name.
+
+3. Create a EC2 Key pair
+```
+   resource "aws_key_pair" "my-key" {
+  key_name   = 
+  public_key = 
+}
+```
+you can give your own **"key_name"**, "**public_key"**
+**FOLLOW THE TERRAFORM DOCUMENTATION FOR EC2 KEY PAIR https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/key_pair**
+
+4. Create a AWS default vpc and assign to the instance and security group
+**FOLLOW THE TERRAFORM DOCUMENTATION FOR VPC https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/default_vpc**
+
+5. Create a AWS security group
+```
+resource "aws_security_group" "security" {
+  name        = "security"
+  description = "Allow ssh inbound traffic"
+  vpc_id      = aws_default_vpc.default_vpc.id
+
+  ingress {
+
+    description = "TLS from VPC"
+    from_port   = 22
+    to_port     = 22
+    protocol    = "tcp"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+
+  tags = {
+    "Name" = "security"
+  }
+}
+```
+Creates a security group resource and sets the name of the security group. Defines an ingress rule to allow SSH traffic on port 22 from any IP.
+**FOLLOW THE TERRAFORM DOCUMENTATION FOR SECURITY GROUP https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group**
+
+6. Create a AWS iNSTANCE
+```
+resource "aws_instance" "instance" {
+  key_name        = aws_key_pair.my-key.key_name
+  ami             = var.aws_instance
+  instance_type   = var.aws_type
+  security_groups = [aws_security_group.security.name]
+  tags = {
+    "Name" = "day-three"
+  }
+```
+
+![image](https://github.com/Paisandy/TerraWeek/assets/115485972/4e08f3bf-19fe-48e9-9350-addc28139116)
+
+![image](https://github.com/Paisandy/TerraWeek/assets/115485972/692f0934-2d7d-4b44-8691-5cab14eb47f1)
+
+
