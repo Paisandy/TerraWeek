@@ -120,3 +120,34 @@ terraform state list
 
 ## 3. Add a provisioner to the configuration file to configure the resource after it is created and use Terraform commands to apply for changes and destroy to remove resources.
 
+Click in this link https://github.com/Paisandy/TerraWeek/blob/main/day03/Day03_Solution.md#create-a-terraform-configuration-file-to-define-a-resource-of-aws-ec2-instance and follow the steps and check it the plugins, providers and follow the **Terraform Documentations**
+
+After that do
+```
+terraform fmt
+```
+```
+terraform validate
+```
+```
+terraform plan
+```
+```
+terraform apply
+```
+
+![image](https://github.com/Paisandy/TerraWeek/assets/115485972/d2fd23ed-bf05-4224-8618-806bc4518d37)
+
+![image](https://github.com/Paisandy/TerraWeek/assets/115485972/49ebc4ec-b863-4d3e-b11f-adedda426cc9)
+
+![image](https://github.com/Paisandy/TerraWeek/assets/115485972/7f46791f-8259-41eb-acd3-cdfa7e6a26b6)
+
+![image](https://github.com/Paisandy/TerraWeek/assets/115485972/eb40cab1-f76c-4c0f-be59-42050a3ec7cf)
+
+![image](https://github.com/Paisandy/TerraWeek/assets/115485972/ebc82906-ee84-4ef0-9295-1e8d5e3ea53a)
+
+![image](https://github.com/Paisandy/TerraWeek/assets/115485972/06197bd0-d74b-4855-bf0c-59a5acf6d6a3)
+
+![image](https://github.com/Paisandy/TerraWeek/assets/115485972/132ba498-f8f7-494e-9534-f8d2a0b8e04b)
+
+![image](https://github.com/Paisandy/TerraWeek/assets/115485972/c02807e8-b049-404b-aabe-5b075bd349ef)
