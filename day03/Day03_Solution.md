@@ -151,3 +151,58 @@ terraform apply
 ![image](https://github.com/Paisandy/TerraWeek/assets/115485972/132ba498-f8f7-494e-9534-f8d2a0b8e04b)
 
 ![image](https://github.com/Paisandy/TerraWeek/assets/115485972/c02807e8-b049-404b-aabe-5b075bd349ef)
+
+![image](https://github.com/Paisandy/TerraWeek/assets/115485972/9a0a8bde-a13c-4104-bee9-fe72d832c44d)
+
+Finally your AWS EC2 Is Running!!
+
+## 4. Add lifecycle management configurations to the configuration file to control the creation, modification, and deletion of the resource and use Terraform commands to apply the changes.
+
+Lifecycle management in Terraform allows you to control the behavior of your resources throughout their lifecycle, including their creation, modification, and deletion. It provides fine-grained control over when and how resources are replaced or updated, and it's crucial for managing resources safely and efficiently. Here's an overview of Terraform's lifecycle management features:
+
+**1. Create Before Destroy:** By default, Terraform creates a new resource and then destroys the old one when you update a resource. This behavior is known as "create before destroy." It ensures minimal downtime during updates but might not be suitable for all scenarios.
+
+![image](https://github.com/Paisandy/TerraWeek/assets/115485972/53c040f2-3e42-4d0f-98b7-2e8893bf07c8)
+
+**2. Prevent Destroy:** You can use the **"prevent_destroy"** argument to prevent certain resources from being destroyed, providing an extra layer of safety. This is useful for critical resources that should never be deleted accidentally.
+
+```
+resource "aws_instance" "instance" {
+  key_name        = aws_key_pair.my-key.key_name
+  ami             = var.aws_instance
+  instance_type   = var.aws_type
+  security_groups = [aws_security_group.security.name]
+  tags = {
+    "Name" = "day-three"
+  }
+
+  lifecycle {
+    prevent_destroy = true
+  }
+}
+```
+
+![image](https://github.com/Paisandy/TerraWeek/assets/115485972/3f81900b-b120-4e72-99c8-13e85190ea6c)
+
+```
+resource "aws_instance" "instance" {
+  key_name        = aws_key_pair.my-key.key_name
+  ami             = var.aws_instance
+  instance_type   = var.aws_type
+  security_groups = [aws_security_group.security.name]
+  tags = {
+    "Name" = "day-three"
+  }
+
+  lifecycle {
+    prevent_destroy = false
+  }
+}
+```
+
+![image](https://github.com/Paisandy/TerraWeek/assets/115485972/31805839-f501-4d01-a556-b997e33f443c)
+
+![image](https://github.com/Paisandy/TerraWeek/assets/115485972/cc86aa02-ac30-480e-82dc-bbd0308ff202)
+
+# Conclusion:
+You did it! You learned how to use Terraform, See the magic how automation work. Practice it more. Do hands on experience. Will see next blog.
